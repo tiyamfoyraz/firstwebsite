@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+/*  --HEADER SECTION STYLE--  */
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*MEDIA */
+
+@media only screen and (max-width:768px){
+
+}

@@ -1,28 +1,200 @@
-body{
-    margin: 0;
+* {
     padding: 0;
-    position: relative;
-}
-
-
-/*  --HEADER SECTION STYLE--  */
-
-header{
-    width: 100%;
-    height: 100vh;
-    background: url("bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-section .container,
+.biography-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-section {
+    background: url(images/header-bg.png) 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+
+.biography-section {
+    background: url(images/biography-bg.png) 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+}
+
+.latest-work-section {
+    padding: 70px 0;
+    background: url(images/latest-work-bg.png) 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.client-section {
+    padding: 70px 0;
+    background: url(images/footer-bg.png) 0 100% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.content,
+.author-image {
+    flex: 1;
+}
+
+.content h2 {
+    font-size: 50px;
+    color: #555555;
+}
+
+h2.section-title {
+    font-size: 50px;
+    text-align: center;
+    color: #555555;
+}
+
+.content span {
+    display: block;
+    color: #f94484;
+    font-size: 55px;
+}
+
+.content p {
+    line-height: 1.4;
+    margin: 30px 0;
+}
+
+button {
+    background: #f94484;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #EBC244;
+    outline: none;
+}
+
+.author-image img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-section .content {
+    padding-right: 30px;
+}
+
+.biography-section .content {
+    padding-left: 30px;
+}
+
+.latest-work-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.works {
+    display: flex;
+    margin-top: 50px;
+}
+
+.works a {
+    display: block;
+    margin: 20px;
+    transition: 0.3s;
+    box-shadow: 1px 1px 1px 1px #000;
+}
+
+.works a:hover {
+    box-shadow: 2px 2px 15px 5px #000;
+    transform: scale(1.02);
+}
+
+.works a img {
+    width: 100%;
+}
+
+.client-section .qoute {
+    padding: 30px;
+}
+
+.client-section .qoute h5 {
+    font-weight: 400;
+}
+
+.client-section .qoute p {
+    margin: 30px auto 0;
+    max-width: 500px;
+}
+
+.client-section .call-to-action {
+    padding: 50px;
+    border-radius: 20px;
+    background: #f94484;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.client-section .call-to-action a {
+    display: block;
+    font-size: 26px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.client-section .call-to-action a:hover {
+    color: #EBC244;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 15px 25px;
+    font-size: 13px;
+}
 
 
+/***** Resoponsiveness *****/
 
-
-/*MEDIA */
-
-@media only screen and (max-width:768px){
-
+@media screen and (max-width: 767px) {
+    .hero-section .container,
+    .biography-section .container {
+        display: block;
+        text-align: center;
+    }
+    .content,
+    .author-image {
+        margin-top: 30px;
+        padding: 0 !important;
+    }
+    .works {
+        display: block;
+    }
+    .works a {
+        margin: 40px 20px;
+    }
+    .client-section .container {
+        padding: 0 20px;
+    }
+    .client-section .call-to-action {
+        padding: 35px 20px;
+    }
 }
